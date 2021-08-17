@@ -15,5 +15,15 @@ class test_20 {
             }
             System.out.println ();
         }
+        int line=6;
+        for (int u=0;u<line;u++){
+            for (int v=0;v<line-u;v++){
+                System.out.print (" ");
+            }
+            for (int v=0;v<=u;v++){
+            System.out.print ("*  ");
+            }
+            System.out.println ();
+        }
     }
 }
