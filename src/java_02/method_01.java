@@ -13,6 +13,7 @@ class method_01 {
         printName ();
         System.out.println (get ( 15 ));
         System.out.println (get ( 5 ));
+        smile ( 3 );
     }
     //创建方法
     public static void printName(){
@@ -28,5 +29,14 @@ class method_01 {
             return "唉，你给的钱不够啊";
         }
     }
-
+    public static
+    void smile( int moneyL){
+        //判断满足条件不执行后续代码
+        if (moneyL<=0){
+            return;
+        }
+        for (int x=1;x<=moneyL;x++){
+            System.out.println ("给爷笑，第"+x+"次");
+        }
+    }
 }
