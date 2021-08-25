@@ -6,18 +6,15 @@ package classesObjects;
 class PersonFr {
     private String name;
     private int age;
-
     public
     void tell () {
         System.out.println ( "姓名：" + name + "、 年龄：" + age );
     }
-
     //设置姓名属性
     public
     void setName ( String n ) {
         name = n;
     }
-
     //设置年龄属性
     public
     void setAge ( int a ) {
@@ -27,13 +24,11 @@ class PersonFr {
             age = a;
         }
     }
-
     //获取姓名属性
     public
     String getName () {
         return name;
     }
-
     //获取年龄属性
     public
     int getAge () {
