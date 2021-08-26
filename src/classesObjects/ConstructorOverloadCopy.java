@@ -10,17 +10,6 @@ package classesObjects;
 class PersonSev {
     private String name;
     private int age;
-    /**
-     * 无参--一参--二参
-    */
-    public PersonSev(){
-        //赋予默认值
-        name="张二狗";
-        age=100;
-    }
-    public PersonSev(String n){
-        name=n;
-    }
     public void tell () {
         System.out.println ( "姓名：" + name + "、 年龄：" + age );
     }
@@ -61,13 +50,15 @@ class ConstructorOverloadCopy {
     void main ( String[] args ) {
         //1、对象的初始化准备。2、
         //声明并实例化对象
-        PersonSev per = new PersonSev ();
+        PersonSev per = new PersonSev ("张三",19);
     /*//在类外部修改属性
     per.name="狗蛋";
     per.age=-56;*/
         //使用方法
         /*per.setName ( "张三" );
         per.setAge ( 28 );*/
+        //修改属性内容
+        per.setAge ( 25 );
         //2、对象的使用
         //方法调用
         per.tell ();
