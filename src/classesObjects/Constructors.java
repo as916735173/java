@@ -16,6 +16,13 @@ class PersonFr {
     public void tell () {
         System.out.println ( "姓名：" + name + "、 年龄：" + age );
     }
+    //方法名称必须与类名称保持一致
+    public PersonFr(String n,int a){
+        //定义有参构造
+        //为类中的属性赋值（初始化）
+        name=n;
+        age=a;
+    }
     //设置姓名属性
     public
     void setName ( String n ) {
@@ -41,19 +48,22 @@ class PersonFr {
         return age;
     }
 }
+    /**
+     * @author chaz
+     */
     public
     class Constructors {
         public static
         void main ( String[] args ) {
             //1、对象的初始化准备。2、
             //声明并实例化对象
-            PersonFr per = new PersonFr ();
+            PersonFr per = new PersonFr ("张三",18);
         /*//在类外部修改属性
         per.name="狗蛋";
         per.age=-56;*/
             //使用方法
-            per.setName ( "张三" );
-            per.setAge ( 28 );
+            /*per.setName ( "张三" );
+            per.setAge ( 28 );*/
             //2、对象的使用
             //方法调用
             per.tell ();
