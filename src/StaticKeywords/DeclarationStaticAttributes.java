@@ -21,7 +21,8 @@ class Person{
         this.age=age;
     }
     public String getInfo(){
-        return "姓名："+this.name+"、 年龄:"+this.age+"、 国家:"+this.country;
+        /*return "姓名："+this.name+"、 年龄:"+this.age+"、 国家:"+this.country;*/
+        return "姓名："+this.name+"、 年龄:"+this.age+"、 国家:"+country;
     }
 }
 /**
@@ -54,4 +55,6 @@ class DeclarationStaticAttributes {
     ————所以static属性可以由类名称直接调用:第45行代码
     2、static属性虽然定义在类中，但是其并不受到类实例化队形的控制
     ————static属性可以在没有实例化对象的时候使用
+    3、在以后进行类设计的时候首选一定是非static属性，考虑到公共信息存储的时候才会使用到static属性
+    ————非static属性必须在实例化对象产生后才可以使用，而static属性可以在没有实例化对象产生时通过类名称调用
  */
