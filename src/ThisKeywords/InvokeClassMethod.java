@@ -13,15 +13,25 @@ package ThisKeywords;
 class PersonFi{
     private String name;
     private int age;
+    public PersonFi(){
+        System.out.println ("-------SB---------");
+    }
+    public PersonFi(String name){
+        System.out.println ("-------SB---------");
+        this.name=name;
+    }
     public PersonFi(String name,int age){
-        //加和不加都表示本类方法
+        System.out.println ("-------SB---------");
+        this.name=name;
+        this.age=age;
+        /*加和不加都表示本类方法
         this.setName ( name );
-        setAge ( age );
+        setAge ( age );*/
     }
     public void tell(){
         System.out.println ("姓名："+this.name+"、 年龄："+this.age);
     }
-    //普通方法调用
+    /*//普通方法调用
     public void setName(String name){
         this.name=name;
     }
@@ -33,7 +43,7 @@ class PersonFi{
     }
     public int getAge(){
         return this.age;
-    }
+    }*/
 }
 
 /**
